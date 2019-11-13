@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node main/test.js",
+    "build": "rm -rf dist; mkdir dist; cp templates/index.html dist/",
     "dokku": {
       "predeploy": "python /code/manage.py migrate --noinput"
       
